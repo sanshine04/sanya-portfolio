@@ -247,87 +247,168 @@
   </section>
 
   <section id="projects">
-    <p class="section-eyebrow">Selected projects</p>
+  <p class="section-eyebrow">Selected projects</p>
 
-    <div class="projects-grid">
+  <div class="projects-list">
 
-      <div class="proj-card">
-        <div class="proj-type hw">Hardware · Software</div>
-        <div class="proj-title">JEEVAN — Personal Medical Assistant</div>
-        <div class="proj-desc">Built end-to-end — designed the PCB and microcontroller setup from scratch, then implemented real-time health data processing using C++ and JavaScript.</div>
-        <div class="proj-tags">
-          <span>PCB Design</span>
-          <span>C++</span>
+    <div class="proj-card-new">
+      <div class="proj-card-left">
+        <div class="proj-type-new de">Data Engineering</div>
+        <div class="proj-title-new">Concordia — Multi-Source Data Reconciliation Engine</div>
+        <div class="proj-oneliner">Entity resolution pipeline that merges messy, multi-source customer records into a single golden record.</div>
+        <div class="proj-desc-new">Building a PySpark-based pipeline to reconcile customer records across CRM, billing, and support datasets with mismatched IDs, name variants, and conflicting timestamps. Implements fuzzy matching (Jaro-Winkler, Soundex) combined with rule-based logic — a senior-level data engineering problem rarely attempted in portfolio projects.</div>
+        <div class="proj-tags-new">
+          <span>Python</span>
+          <span>PySpark</span>
+          <span>Jellyfish</span>
+          <span>Pandas</span>
+          <span>Entity Resolution</span>
+        </div>
+      </div>
+      <div class="proj-card-right">
+        <span class="proj-origin personal">Personal</span>
+      </div>
+    </div>
+
+    <div class="proj-card-new">
+      <div class="proj-card-left">
+        <div class="proj-type-new sw">Developer Tools</div>
+        <div class="proj-title-new">Codebase Health Analyzer</div>
+        <div class="proj-oneliner">A code metrics dashboard that surfaces health indicators to help teams prioritize refactoring.</div>
+        <div class="proj-desc-new">Analyses repositories and generates actionable health scores across complexity, duplication, and coupling. Helps engineering teams make data-driven decisions about where to invest refactoring effort.</div>
+        <div class="proj-tags-new">
+          <span>Python</span>
+          <span>ast</span>
+          <span>subprocess</span>
+          <span>threading</span>
+        </div>
+      </div>
+      <div class="proj-card-right">
+        <span class="proj-origin personal">Personal</span>
+      </div>
+    </div>
+
+    <div class="proj-card-new">
+      <div class="proj-card-left">
+        <div class="proj-type-new sw">Developer Tools</div>
+        <div class="proj-title-new">Logic Lens — Code Visualizer</div>
+        <div class="proj-oneliner">Helps developers understand code structure and logic flow across unfamiliar codebases.</div>
+        <div class="proj-desc-new">A visualizer that maps out code architecture and logic paths, making onboarding to new codebases faster. Built with a React frontend and a Python/Flask backend that parses and renders code structure dynamically.</div>
+        <div class="proj-tags-new">
+          <span>React</span>
           <span>JavaScript</span>
-        </div>
-      </div>
-
-      <div class="proj-card">
-        <div class="proj-type ml">ML · Data</div>
-        <div class="proj-title">Network Traffic Anomaly Detection</div>
-        <div class="proj-desc">ML-based system in Python that identifies irregular patterns in network traffic data using anomaly detection techniques.</div>
-        <div class="proj-tags">
           <span>Python</span>
-          <span>Scikit-learn</span>
-          <span>Anomaly Detection</span>
+          <span>Flask</span>
         </div>
       </div>
-
-      <div class="proj-card">
-        <div class="proj-type ai">AI · NLP</div>
-        <div class="proj-title">Mind Mirror — Emotional LLM</div>
-        <div class="proj-desc">An LLM-integrated system that detects emotional context and generates empathetically tailored responses.</div>
-        <div class="proj-tags">
-          <span>Python</span>
-          <span>NLP</span>
-          <span>LLM Integration</span>
-        </div>
+      <div class="proj-card-right">
+        <span class="proj-origin personal">Personal</span>
       </div>
+    </div>
 
-      <div class="proj-card">
-        <div class="proj-type hw">Hardware · AI</div>
-        <div class="proj-title">Face Mask Detector — Raspberry Pi</div>
-        <div class="proj-desc">Computer vision model deployed on Raspberry Pi for real-time face mask detection. Deep learning inference on constrained hardware.</div>
-        <div class="proj-tags">
-          <span>Raspberry Pi</span>
-          <span>OpenCV</span>
-          <span>Deep Learning</span>
-        </div>
-      </div>
+  </div>
 
-      <div id="extra-projects" style="display:none;">
+  <!-- COLLEGE PROJECTS -->
+  <div id="extra-projects" style="display:none;">
+    <div class="projects-list" style="margin-top: 16px;">
 
-        <div class="proj-card">
-          <div class="proj-type ml">ML · Security</div>
-          <div class="proj-title">Network Intrusion Detection System</div>
-          <div class="proj-desc">Python and ML-based classifier to detect and flag network intrusion attempts across labelled datasets.</div>
-          <div class="proj-tags">
-            <span>Python</span>
-            <span>Classification</span>
-            <span>Data Pipelines</span>
+      <div class="proj-card-new">
+        <div class="proj-card-left">
+          <div class="proj-type-new hw">Hardware · Software</div>
+          <div class="proj-title-new">JEEVAN — Personal Medical Assistant</div>
+          <div class="proj-oneliner">End-to-end hardware medical assistant built from scratch.</div>
+          <div class="proj-desc-new">Designed PCB and microcontroller setup from scratch using C++ and JavaScript for real-time health data processing. Full-stack ownership from hardware architecture to backend software.</div>
+          <div class="proj-tags-new">
+            <span>C++</span>
+            <span>JavaScript</span>
+            <span>PCB Design</span>
+            <span>Embedded Systems</span>
           </div>
         </div>
+        <div class="proj-card-right">
+          <span class="proj-origin college">College</span>
+        </div>
+      </div>
 
-        <div class="proj-card">
-          <div class="proj-type ai">AI · Health</div>
-          <div class="proj-title">MEDIBOT — AI Virtual Health Assistant</div>
-          <div class="proj-desc">AI-powered virtual health assistant that answers medical queries and guides users through symptoms.</div>
-          <div class="proj-tags">
+      <div class="proj-card-new">
+        <div class="proj-card-left">
+          <div class="proj-type-new ml">ML · Data</div>
+          <div class="proj-title-new">Network Traffic Anomaly Detection</div>
+          <div class="proj-oneliner">ML-based system to identify irregular patterns in network traffic data.</div>
+          <div class="proj-desc-new">Built an anomaly detection pipeline in Python applicable to data analytics and engineering roles requiring pattern recognition on structured datasets.</div>
+          <div class="proj-tags-new">
             <span>Python</span>
-            <span>Conversational AI</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>Anomaly Detection</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <span class="proj-origin college">College</span>
+        </div>
+      </div>
+
+      <div class="proj-card-new">
+        <div class="proj-card-left">
+          <div class="proj-type-new ai">AI · NLP</div>
+          <div class="proj-title-new">Mind Mirror — Emotional LLM</div>
+          <div class="proj-oneliner">LLM-integrated system that detects emotional context and responds empathetically.</div>
+          <div class="proj-desc-new">Built with Python, OpenAI API, and LangChain. Detects emotional tone in input and generates tailored responses, showcasing hands-on experience with conversational AI design and NLP pipelines.</div>
+          <div class="proj-tags-new">
+            <span>Python</span>
+            <span>LangChain</span>
+            <span>OpenAI API</span>
+            <span>FastAPI</span>
             <span>NLP</span>
           </div>
         </div>
+        <div class="proj-card-right">
+          <span class="proj-origin college">College</span>
+        </div>
+      </div>
 
+      <div class="proj-card-new">
+        <div class="proj-card-left">
+          <div class="proj-type-new ml">ML · Security</div>
+          <div class="proj-title-new">Network Intrusion Detection System</div>
+          <div class="proj-oneliner">ML classifier to detect and flag network intrusion attempts.</div>
+          <div class="proj-desc-new">Python and ML-based classifier trained on labelled datasets. Demonstrates applied experience with data pipelines, model training, and evaluation metrics.</div>
+          <div class="proj-tags-new">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>Data Pipelines</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <span class="proj-origin college">College</span>
+        </div>
+      </div>
+
+      <div class="proj-card-new">
+        <div class="proj-card-left">
+          <div class="proj-type-new hw">Hardware · AI</div>
+          <div class="proj-title-new">Face Mask Detector — Raspberry Pi</div>
+          <div class="proj-oneliner">Real-time face mask detection deployed on constrained hardware.</div>
+          <div class="proj-desc-new">Computer vision model deployed on Raspberry Pi for real-time inference. Combines embedded hardware constraints with deep learning on-device.</div>
+          <div class="proj-tags-new">
+            <span>Raspberry Pi</span>
+            <span>OpenCV</span>
+            <span>Deep Learning</span>
+          </div>
+        </div>
+        <div class="proj-card-right">
+          <span class="proj-origin college">College</span>
+        </div>
       </div>
 
     </div>
+  </div>
 
-    <div class="see-more-wrap">
-      <button id="see-more-btn" onclick="toggleProjects()">See more projects ↓</button>
-    </div>
-  </section>
-
+  <div class="see-more-wrap">
+    <button id="see-more-btn" onclick="toggleProjects()">See college projects ↓</button>
+  </div>
+</section>
 <section id="contact">
   <p class="section-eyebrow">Contact</p>
 
